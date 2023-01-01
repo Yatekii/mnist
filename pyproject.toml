@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mnist_exp"
+version = "0.1.0"
+description = ""
+authors = ["Noah Hüsser <noah@huesser.dev>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.6.2"
+pandas = "^1.5.2"
+numpy = "^1.23.5"
+python-mnist = "^0.7"
+
+[tool.poetry.scripts]
+mnist = "mnist_exp:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
